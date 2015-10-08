@@ -6,7 +6,8 @@ project Gopher_Concurrency_Exercises is
    for Source_Dirs use ("src/");
 
    for Main use ("gopher_concurrency_exercises-demo",
-                 "daily_walk");
+                 "daily_walk",
+                 "eating_tapas-run");
 
    package Builder  renames Ada_2012.Builder;
    package Compiler renames Ada_2012.Compiler;
