@@ -1,10 +1,12 @@
 with
+  Gopher_Concurrency_Exercises.Duration,
   Gopher_Concurrency_Exercises.Text_IO;
 with
   Eating_Tapas.Strings,
   Eating_Tapas.Table;
 
 procedure Eating_Tapas.Run is
+   use Gopher_Concurrency_Exercises.Duration;
    use Gopher_Concurrency_Exercises.Text_IO;
    use Strings;
 
@@ -27,6 +29,8 @@ procedure Eating_Tapas.Run is
                Table.Instance.Pick (Morsel);
                Put_Line
                  (+My_Name & " is enjoying some " & (+Morsel) & ".");
+               delay Random (Lower_Bound => 30 * Seconds,
+                             Upper_Bound =>  3 * Minutes);
             else
                Put_Line
                  (+My_Name & " looks for something to eat.");
