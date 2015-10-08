@@ -7,7 +7,8 @@ project Gopher_Concurrency_Exercises is
 
    for Main use ("gopher_concurrency_exercises-demo",
                  "daily_walk",
-                 "eating_tapas-run");
+                 "eating_tapas-run",
+                 "internet_café");
 
    package Builder  renames Ada_2012.Builder;
    package Compiler renames Ada_2012.Compiler;

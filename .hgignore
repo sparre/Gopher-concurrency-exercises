@@ -36,4 +36,5 @@ obj/*.o
 bin/gopher_concurrency_exercises-demo
 bin/daily_walk
 bin/eating_tapas-run
+bin/internet_café
 
